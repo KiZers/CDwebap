@@ -5,7 +5,6 @@ app = Flask(__name__)
 # Liste des dépenses initiales
 expenses = [
     {'id': 1, 'item': 'Pain', 'amount': 3.50},
-    {'id': 2, 'item': 'Lait', 'amount': 2.00},
     {'id': 3, 'item': 'Œufs', 'amount': 4.25}
 ]
 
