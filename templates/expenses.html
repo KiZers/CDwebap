@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Expenses</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Liste des Dépenses</h1>
     <ul>
         {% for expense in expenses %}
-            <li>{{ expense.item }} - ${{ expense.amount }}</li>
+            <li>{{ expense.item }} - ${{ expense.amount }}
+                <form action="/delete/{{ expense.id }}" method="post" style="display: inline;">
+                    <button type="submit">Supprimer</button>
+                </form>
+            </li>
         {% endfor %}
     </ul>
     <a href="/add">Ajouter une dépense</a>
