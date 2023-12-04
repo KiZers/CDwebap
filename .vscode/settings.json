@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d6d14885-4cc0-4b5a-be6a-c1063bbe73c1/resourceGroups/cdweb_group-96f7/providers/Microsoft.Web/sites/cdweb",
+    "appService.deploySubpath": "."
+}
